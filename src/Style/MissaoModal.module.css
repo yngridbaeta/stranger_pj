@@ -1,0 +1,163 @@
+/* MODAL CENTRALIZADO + FUNDO ESCURO */
+.modal {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  z-index: 999;
+}
+
+/* ESCURECIMENTO DO FUNDO */
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(3px);
+}
+
+/* ÁREA PRINCIPAL DO MODAL */
+.modalArea {
+  background: rgba(5, 5, 5, 0.92);
+  border: 2px solid rgba(255, 0, 0, 0.45);
+
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 550px;
+
+  box-shadow:
+    0 0 25px rgba(255, 0, 0, 0.35),
+    inset 0 0 12px rgba(255, 0, 0, 0.25);
+
+  font-family: 'Cinzel', serif;
+  color: #e6e6e6;
+
+  animation: abrir 0.35s ease;
+}
+
+@keyframes abrir {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* TÍTULO */
+.titulo {
+  color: #ffffff;
+  text-align: center;
+
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+
+  text-shadow:
+    0 0 12px #ff0000,
+    0 0 22px #800000;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+  color: #dcdcdc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* INPUT */
+.caixaTexto {
+  width: 100%;
+  padding: 0.8rem;
+
+  background: rgba(20, 0, 0, 0.6);
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  color: #ff9999;
+
+  outline: none;
+  border-radius: 8px;
+
+  font-size: 1rem;
+
+  box-shadow:
+    inset 0 0 8px rgba(255, 0, 0, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.caixaTexto:focus {
+  border-color: #ff1a1a;
+  box-shadow:
+    0 0 12px rgba(255, 0, 0, 0.6),
+    inset 0 0 12px rgba(255, 0, 0, 0.4);
+}
+
+/* BOTÕES */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.botoes button {
+  padding: 0.6rem 1.2rem;
+
+  background: black;
+  border: 1px solid #ff1a1a;
+  color: #ff1a1a;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  font-family: 'Cinzel', serif;
+}
+
+.botoes button:hover {
+  background: #ff1a1a;
+  color: black;
+
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* RESULTADO */
+.resultado {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.resultado p {
+  font-size: 1.2rem;
+  color: #ff4444;
+
+  text-shadow:
+    0 0 10px #ff0000,
+    0 0 20px #990000;
+}
+
+.resultado img {
+  margin-top: 0.8rem;
+  animation: pulsar 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes pulsar {
+  from {
+    transform: scale(0.95);
+    filter: drop-shadow(0 0 5px red);
+  }
+  to {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px red);
+  }
+}

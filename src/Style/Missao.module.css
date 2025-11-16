@@ -1,0 +1,132 @@
+
+/* CONTAINER PRINCIPAL */
+.conteiner {
+    height: 60%;
+    margin: 1rem 0rem 4rem 0rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    color: #ff1a1a;
+    width: 60%;
+    overflow-y: auto;
+    max-height: 80vh;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 0, 0, 0.35);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.25), inset 0 0 20px rgba(0, 0, 0, 0.8);
+    scrollbar-width: thin;
+}
+
+/* scroll webkit */
+.conteiner::-webkit-scrollbar {
+  width: 8px;
+}
+
+.conteiner::-webkit-scrollbar-thumb {
+  background: #e60012;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
+}
+
+.conteiner::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* TÍTULO */
+.titulo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+
+  text-shadow:
+    0 0 8px #ff0000,
+    0 0 18px #b30000,
+    0 0 28px #800000;
+
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+
+/* GRID DE MISSÕES */
+.missoesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* ARTICLE (área do card) */
+.missaoArea {
+  display: block;
+}
+
+/* CARD */
+.missaoCard {
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  border-radius: 16px;
+  padding: 1.5rem;
+
+  color: #e6e6e6;
+
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+
+  box-shadow:
+    0 0 14px rgba(255, 0, 0, 0.25),
+    inset 0 0 10px rgba(255, 0, 0, 0.15);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s;
+  min-height: 240px;
+}
+
+.missaoCard:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow:
+    0 0 25px rgba(255, 0, 0, 0.6),
+    0 0 50px rgba(255, 0, 0, 0.35);
+
+  border-color: #ff1a1a;
+}
+
+/* TÍTULO DO CARD */
+.missaoCardTitulo {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+
+  color: #ff1a1a;
+
+  text-shadow:
+    0 0 10px #ff0000,
+    0 0 20px #800000;
+}
+
+/* TEXTO */
+.missaoCardTexto {
+  line-height: 1.5;
+  color: #d1caca;
+}
+
+/* INFO DA MISSÃO */
+.missaoCardConteudo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+
+  color: #ff1a1a;
+  text-shadow:
+    0 0 8px #ff0000,
+    0 0 15px #800000;
+}
+
+/* MISSÃO CONCLUÍDA */
+.missaoCardConcluida {
+  margin-top: 1rem;
+  color: #40ff40;
+
+  text-shadow:
+    0 0 12px #00ff00,
+    0 0 25px #008000;
+
+  font-weight: bold;
+}

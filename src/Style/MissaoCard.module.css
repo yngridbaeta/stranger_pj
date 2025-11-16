@@ -1,0 +1,69 @@
+.card {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 1.5rem;
+
+  font-family: "Cinzel", serif;
+  color: #ffaea6;
+
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.45);
+  border-color: rgba(255, 0, 0, 0.6);
+}
+
+/* TÍTULO */
+.titulo {
+  font-size: 1.4rem;
+  color: #ffffff;
+
+  text-shadow:
+    0 0 10px #ff0000aa,
+    0 0 16px #800000;
+
+  margin-bottom: 0.5rem;
+}
+
+/* TEXTO */
+.texto {
+  color: #f2dcdc;
+  margin-bottom: 1rem;
+}
+
+/* BOTÃO (igual do modal) */
+.botao {
+  width: 100%;
+  padding: 0.6rem 1rem;
+
+  background: black;
+  border: 1px solid #ff1a1a;
+  color: #ff1a1a;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+}
+
+.botao:hover:not(:disabled) {
+  background: #ff1a1a;
+  color: black;
+
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+.botao:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: #8b0000;
+  color: #8b0000;
+
+  box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.3);
+}

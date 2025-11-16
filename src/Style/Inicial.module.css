@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.inicial {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  background-image: url('../assets/inicial.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8vh;
+  gap: 2rem;
+}
+
+.titulo {
+  font-family: 'Bebas Neue', cursive;
+  color: #000000; 
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  max-width: 90vw;
+  letter-spacing: 0.1em;
+  user-select: none;
+
+  /* Sombra neon estilo Stranger Things */
+  text-shadow:
+    0 0 5px #ff4c00,
+    0 0 10px #ff4c00,
+    0 0 20px #ff4c00,
+    0 0 30px #ff3300,
+    0 0 40px #ff3300,
+    0 0 50px #ff3300,
+    0 0 60px #ff1a00;
+}
+
+.entrar {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  padding: 0.9rem 3rem;
+  border-radius: 20px;
+  cursor: pointer;
+
+  background: transparent;
+  border: 2px solid #ff4c00;
+  color: #000000;
+  transition: all 0.3s ease;
+  user-select: none;
+
+  
+  /* Sombra neon estilo Stranger Things */
+  text-shadow:
+    0 0 5px #ff4c00,
+    0 0 10px #ff4c00,
+    0 0 20px #ff4c00,
+    0 0 30px #ff3300,
+    0 0 40px #ff3300,
+    0 0 50px #ff3300,
+    0 0 60px #ff1a00;
+
+  box-shadow:
+    0 0 5px #ff4c00,
+    0 0 10px #ff4c00;
+}
+
+.entrar:hover {
+  background: #ff4c00;
+  color: #000000;
+  box-shadow:
+    0 0 10px #ff7a33,
+    0 0 20px #ff7a33,
+    0 0 30px #ff7a33;
+}

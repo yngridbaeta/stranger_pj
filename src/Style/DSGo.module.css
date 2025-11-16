@@ -1,0 +1,15 @@
+.corpo {
+display: flex;
+    height: 98vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/src/assets/arena.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+
+/* Conteúdo principal */
+.conteudo {
+    background: rgba(0, 0, 0, 0.2);
+}
