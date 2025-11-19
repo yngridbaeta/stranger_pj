@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import sucesso from "../assets/win.png";
-import erro from "../assets/raios.png";
 import styles from "../Style/MissaoModal.module.css";
 
 export function MissaoModal({ missao, onClose, onConcluir }) {
@@ -12,7 +10,7 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
 
   useEffect(() => {
     if (dialogRef.current) {
-      dialogRef.current.showModal(); // ← AGORA O BACKDROP FUNCIONA!
+      dialogRef.current.showModal();
     }
   }, []);
 
@@ -69,12 +67,12 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
           <div className={styles.resultado}>
             <p>{resultado}</p>
 
-            {status === "sucesso" && (
-              <img src={sucesso} alt="Missão concluída" width="100" />
+            {status === "sucesso" && missao.imagemSucesso && (
+              <img src={missao.imagemSucesso} alt="Missão concluída" width="100" />
             )}
 
-            {status === "erro" && (
-              <img src={erro} alt="Erro na missão" width="100" />
+            {status === "erro" && missao.imagemErro && (
+              <img src={missao.imagemErro} alt="Erro na missão" width="100" />
             )}
           </div>
         )}

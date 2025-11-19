@@ -8,8 +8,6 @@ export function Camera({ onFotoTirada }) {
   const canvasRef = useRef(null);
   const [foto, setFoto] = useState(null);
  
- 
- 
   // Inicia a câmera automaticamente
   useEffect(() => {
     iniciarCamera();
@@ -44,12 +42,11 @@ export function Camera({ onFotoTirada }) {
     }
   };
  
- 
+
   const reiniciar = () => {
     setFoto(null);
     iniciarCamera();
   };
- 
  
   // Submissão
   const onSubmit = (data) => {
