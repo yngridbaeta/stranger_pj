@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Você está offline - Stranger Quiz</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: linear-gradient(135deg, #ff0000 0%, #b30000 50%, #800000 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    main {
+      background: rgba(20,20,20,0.9);
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 8px #ff0000, 0 0 18px #b30000, 0 0 28px #800000;
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+      border: 1px solid rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      color: #f0ebeb;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 8px #ff0000, 0 0 18px #b30000, 0 0 28px #800000;
+    }
+
+    p {
+      color: #dcdff2;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 6px #ff0000);
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      background: #e03e2f;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+      box-shadow: 0 4px 10px rgba(224, 62, 47, 0.5);
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      background: #bf3427;
+    }
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="titulo">
+    <div class="icon">📡</div>
+    <h1 id="titulo">Você está offline</h1>
+    <p>Não foi possível conectar à internet. Por favor, verifique sua conexão e tente novamente.</p>
+    <button onclick="location.reload()">Tentar Novamente</button>
+  </main>
+</body>
+</html>

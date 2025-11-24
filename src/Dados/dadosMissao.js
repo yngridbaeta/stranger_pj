@@ -1,5 +1,5 @@
-import demogorgonImg from "../assets/demogorgon.png";
-import erroImg from "../assets/raios.png";
+import acertoImg from "../assets/acertou.jpg";
+import erroImg from "../assets/errou.png";
 
 export const missoes = [
   {
@@ -8,7 +8,9 @@ export const missoes = [
     missao: "Qual é o lugar?",
     descricao: "É a dimensão paralela sombria que ameaça Hawkins.",
     respostaCorreta: "Upside Down",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 2,
@@ -17,7 +19,7 @@ export const missoes = [
     descricao: "É o monstro que aparece na primeira temporada.",
     respostaCorreta: "Demogorgon",
     status: 'disponivel',
-    imagemSucesso: demogorgonImg,
+    imagemSucesso: acertoImg,
     imagemErro: erroImg
   },
   {
@@ -26,7 +28,9 @@ export const missoes = [
     missao: "Qual é o objeto?",
     descricao: "São as luzes que Joyce usa para falar com Will.",
     respostaCorreta: "Luzes de Natal",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 4,
@@ -34,7 +38,9 @@ export const missoes = [
     missao: "Qual é o doce favorito?",
     descricao: "É o doce favorito da Eleven.",
     respostaCorreta: "Eggo",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 5,
@@ -42,7 +48,9 @@ export const missoes = [
     missao: "Qual é o transporte?",
     descricao: "É o veículo que os amigos usam para se locomoverem.",
     respostaCorreta: "Bicicleta",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 6,
@@ -50,7 +58,9 @@ export const missoes = [
     missao: "Onde acontece?",
     descricao: "É o lugar onde ocorrem os experimentos com Eleven.",
     respostaCorreta: "Laboratório Hawkins",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 7,
@@ -58,7 +68,9 @@ export const missoes = [
     missao: "Qual é o jogo?",
     descricao: "É o jogo que os amigos jogam juntos.",
     respostaCorreta: "Dungeons & Dragons",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 8,
@@ -66,7 +78,9 @@ export const missoes = [
     missao: "Quem é o chefe de polícia?",
     descricao: "É o chefe de polícia da cidade.",
     respostaCorreta: "Hopper",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 9,
@@ -74,7 +88,9 @@ export const missoes = [
     missao: "Quem desaparece?",
     descricao: "É o garoto que desaparece na primeira temporada.",
     respostaCorreta: "Will",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 10,
@@ -82,7 +98,9 @@ export const missoes = [
     missao: "Quem tem poderes?",
     descricao: "É a menina com poderes telecinéticos.",
     respostaCorreta: "Eleven",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 11,
@@ -90,7 +108,9 @@ export const missoes = [
     missao: "Qual é o monstro gigante?",
     descricao: "É o monstro gigante que parece um polvo na segunda temporada.",
     respostaCorreta: "Mind Flayer",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 12,
@@ -98,7 +118,9 @@ export const missoes = [
     missao: "Qual é a escola?",
     descricao: "É o lugar onde os amigos estudam.",
     respostaCorreta: "Hawkins High School",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 13,
@@ -106,7 +128,9 @@ export const missoes = [
     missao: "Qual é o item de fantasia?",
     descricao: "É a máscara usada para se fantasiar.",
     respostaCorreta: "Máscara de Halloween",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 14,
@@ -114,7 +138,9 @@ export const missoes = [
     missao: "Qual é o objeto de comunicação?",
     descricao: "É o walkie-talkie usado pelos amigos.",
     respostaCorreta: "Walkie-talkie",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   },
   {
     id: 15,
@@ -122,6 +148,8 @@ export const missoes = [
     missao: "Onde some o garoto?",
     descricao: "É o lugar onde o Will some misteriosamente.",
     respostaCorreta: "Floresta",
-    status: 'disponivel'
+    status: 'disponivel',
+    imagemSucesso: acertoImg,
+    imagemErro: erroImg
   }
 ];

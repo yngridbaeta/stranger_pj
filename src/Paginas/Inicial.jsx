@@ -7,13 +7,12 @@ export function Inicial() {
       <h1 className={styles.titulo}>
         Descubra segredos que nem a Eleven ousaria enfrentar.
       </h1>
-      <Link to="dsgo">
-        <button
-          className={styles.entrar}
-          aria-label="Entrar"
-        >
-          Entrar no Mundo Invertido
-        </button>
+
+      <Link
+        to="dsgo"
+        className={styles.entrar}
+      >
+        Entrar no Mundo Invertido
       </Link>
     </main>
   );
