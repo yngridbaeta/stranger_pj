@@ -1,6 +1,12 @@
 import styles from "../Style/MissaoCard.module.css";
 
-export function MissaoCard({ missao, onIniciarMissao, concluida }) {
+export function MissaoCard({ missao, onIniciarMissao }) {
+  // Recupera o inventario do localStorage
+  const inventario = JSON.parse(localStorage.getItem("inventario")) || [];
+  
+  // Verifica se a missão já foi concluída
+  const isConcluida = inventario.some((f) => f.id === missao.id);
+
   return (
     <article 
       className={styles.card}
@@ -25,15 +31,15 @@ export function MissaoCard({ missao, onIniciarMissao, concluida }) {
       <button
         className={styles.botao}
         onClick={() => onIniciarMissao(missao)}
-        disabled={concluida}
-        aria-disabled={concluida}
-        aria-label={concluida 
+        disabled={isConcluida}
+        aria-disabled={isConcluida}
+        aria-label={isConcluida 
           ? `Missão ${missao.titulo} já foi concluída` 
           : `Iniciar missão ${missao.titulo}`
         }
         type="button"
       >
-        {concluida ? (
+        {isConcluida ? (
           <>
             <span aria-hidden="true">✓</span> Missão concluída
           </>
@@ -46,7 +52,7 @@ export function MissaoCard({ missao, onIniciarMissao, concluida }) {
       
       {/* Status visual oculto para leitores de tela */}
       <span className={styles.srOnly} role="status">
-        {concluida ? "Esta missão está completa" : "Esta missão está disponível"}
+        {isConcluida ? "Esta missão está completa" : "Esta missão está disponível"}
       </span>
     </article>
   );

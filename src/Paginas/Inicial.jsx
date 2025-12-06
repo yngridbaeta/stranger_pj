@@ -4,6 +4,8 @@ import styles from '../Style/Inicial.module.css';
 export function Inicial() {
   return (
     <main className={styles.inicial}>
+
+      {/* titulo */}
       <h1 className={styles.titulo}>
         Descubra segredos que nem a Eleven ousaria enfrentar.
       </h1>
