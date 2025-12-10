@@ -1,5 +1,8 @@
 import acertoImg from "../assets/acertou.jpg";
 import erroImg from "../assets/errou.png";
+import upside from "../assets/upside.jpg";
+import demogorgon from "../assets/demogorgon.jpeg";
+import luzes from "../assets/luzes.png";
 
 export const missoes = [
   {
@@ -9,7 +12,7 @@ export const missoes = [
     descricao: "É a dimensão paralela sombria que ameaça Hawkins.",
     respostaCorreta: "Upside Down",
     status: 'disponivel',
-    imagemSucesso: acertoImg,
+    imagemSucesso: upside,
     imagemErro: erroImg
   },
   {
@@ -19,7 +22,7 @@ export const missoes = [
     descricao: "É o monstro que aparece na primeira temporada.",
     respostaCorreta: "Demogorgon",
     status: 'disponivel',
-    imagemSucesso: acertoImg,
+    imagemSucesso: demogorgon,
     imagemErro: erroImg
   },
   {
@@ -29,7 +32,7 @@ export const missoes = [
     descricao: "São as luzes que Joyce usa para falar com Will.",
     respostaCorreta: "Luzes de Natal",
     status: 'disponivel',
-    imagemSucesso: acertoImg,
+    imagemSucesso: luzes,
     imagemErro: erroImg
   },
   {

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu } from "../Componentes/Menu";
+import styles from "../Style/Inventario.module.css";
 
 export function Inventario() {
   const [figurinhas, setFigurinhas] = useState([]);
@@ -10,7 +11,7 @@ export function Inventario() {
     setFigurinhas(armazenado);
   }, []);
 
-    const limparInventario = () => {
+  const limparInventario = () => {
     // pede confirmação ao usuário
     if (!window.confirm("Deseja realmente limpar o inventário?")) return;
 
@@ -21,23 +22,22 @@ export function Inventario() {
     setFigurinhas([]);
   };
 
-
   return (
     <div style={{ display: "flex", height: "100vh" }}>
       <Menu tipo="lateral" />
-      <main className="conteiner" style={{ flex: 1 }}>
-        <section className="inventario">
+      <main className={styles.conteiner} style={{ flex: 1 }}>
+        <section className={styles.inventario}>
           <h2>Inventário</h2>
-          <button className="limpar-inventario" onClick={limparInventario}>
+          <button className={styles.limparInventario} onClick={limparInventario}>
             Limpar Inventário
           </button>
           {/* Caso o jogador ainda não tenha nenhuma figurinha */}
           {figurinhas.length === 0 ? (
-            <p className="vazio">Nenhuma figurinha coletada ainda!</p>
+            <p className={styles.vazio}>Nenhuma figurinha coletada ainda!</p>
           ) : (
-            <div className="grid">
+            <div className={styles.grid}>
               {figurinhas.map((f) => (
-                <div key={f.id} className="figurinha">
+                <div key={f.id} className={styles.figurinha}>
                   <img src={f.imagem} alt={f.nome} />
                 </div>
               ))}

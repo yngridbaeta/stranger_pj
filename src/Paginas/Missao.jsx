@@ -13,10 +13,6 @@ export function Missao() {
   const concluirMissao = (id) => {
     console.log("🎯 Concluindo missão com ID:", id);
     
-    // Pega o inventário salvo no localStorage (se não tiver, cria um array vazio)
-    const inventario = JSON.parse(localStorage.getItem("inventario")) || [];
-    console.log("📦 Inventário atual:", inventario);
-    
     // Busca os dados da missão pelo id
     const missaoData = missoes.find((m) => m.id === id);
     console.log("🔍 Missão encontrada:", missaoData);
@@ -26,13 +22,17 @@ export function Missao() {
       return;
     }
     
-    // Monta uma figurinha com id, nome e imagem
+    // Monta uma figurinha com id, nome e imagem de sucesso
     const figurinha = {
       id: missaoData.id,
       nome: missaoData.titulo || missaoData.nome,
-      imagem: missaoData.imagem
+      imagem: missaoData.imagemSucesso // CORREÇÃO: usar imagemSucesso
     };
     console.log("🎴 Figurinha criada:", figurinha);
+    
+    // Pega o inventário salvo no localStorage (se não tiver, cria um array vazio)
+    const inventario = JSON.parse(localStorage.getItem("inventario")) || [];
+    console.log("📦 Inventário atual:", inventario);
     
     // Evita duplicar: só adiciona se não existir ainda
     if (!inventario.some((f) => f.id === id)) {
